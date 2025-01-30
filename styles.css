@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+    .side-pane {
+        grid-column: 1;
+    }
+        .page-title {
+         display: flex;
+        }
+    .main-pane {
+        grid-column: 2;
+
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+    }
+         .header {
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+        }
+            .header-row1 {
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+            }
+            .header-row2 {
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+            }
+                #user-greeting {
+                    display: grid;
+                    grid-template-columns: 1fr 3fr;
+                }
+                    .profile-photo {
+                        grid-column: 1;
+                    }
+                    .greeting {
+                        grid-column: 2;
+                    }
+                        .greeting-text {
+
+                        }
+                        .profile-name {
+                            
+                        }
+                        .profile-username {
+                            
+                        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 5fr 2fr;
+            
+        }
+            .middle-area {
+            }
+                .user-projects {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                    .project-card {
+                        display: grid;
+                        grid-template-rows: 1fr 1fr 1fr;
+                    }
+            .right-area {
+            }
+                .announcements {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+                }
+                    .announcement-card {
+
+                    }
+                        .announcement-title {
+
+                        }
+                        .announcement-content {
+
+                        }
+                .trending-users {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                }
+                    .trending-card {
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+                    }
+                        .trending-user-profile-photo {
+                            grid-column: 1;
+                        }
+                        .trending-user-username {
+                            grid-column: 2;
+                        }
+                        .trending-user-bio {
+                            grid-column: 2;
+                        }
